@@ -236,7 +236,7 @@
 			}
 			// MAPエリア
 			&.-map-sentaku{
-				top: 100%;
+				top: 80%;
 				left: 28%;
 				width: 50%;
 				@include min(768){
@@ -293,6 +293,73 @@
 					width: 13%;
 					height: auto;
 				}
+			// テロップ
+			&.-map-telop{
+				top: 24%;
+				left: 61.5%;
+				width: 35%;
+				@include min(768){
+					top: 21%;
+					left: 55.1%;
+					width: 18%;
+				}
+			}
+			// ムーミンバレーパーク
+			&.-map-point01{
+				top: 40%;
+				left: 38.5%;
+				width: 11%;
+				@include min(768){
+					top: 38%;
+					left: 42.1%;
+					width: 5%;
+				}
+			}
+			// 巾着田
+			&.-map-point02{
+				top: 17%;
+				left: 10.5%;
+				width: 15%;
+				@include min(768){
+					top: 17%;
+					left: 26.5%;
+					width: 7%;
+				}
+			}
+			// リス
+			&.-map-point03{
+				top: 74%;
+				left: 11.5%;
+				width: 12%;
+				z-index: 2;
+				@include min(768){
+					top: 64%;
+					left: 13.5%;
+					width: 8%;
+				}
+			}
+			&.-map-pukupuku{
+				top: 80%;
+				left: 16.5%;
+				width: 5%;
+				z-index: 1;
+				@include min(768){
+					top: 72%;
+					left: 16.5%;
+					width: 4%;
+				}
+			}
+			// モモンガ
+			&.-map-momo{
+				top: 8%;
+				left: 8%;
+				width: 5%;
+				@include min(768){
+					top: 9%;
+					left: 12%;
+					width: 3%;
+				}
+			}
 		}
 	}
 }
