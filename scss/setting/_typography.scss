@@ -107,7 +107,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
 
     // フォントファミリー(ローカルフォント)
     &.-f-mincho01{font-family: mincho-font01;}// しっぽり
-    &.-f-gothic01{font-family: gothic-font01;}// セザンヌ
+    &.-f-gothic01{font-family: gothic-font03;}// セザンヌ
     &.-f-En01{font-family: e-font01;}         // BebasNeue
     &.-f-En02{font-family: e-font02;}         // impact
     &.-f-En03{font-family: e-font03;}         // garamond
@@ -163,6 +163,7 @@ h1,h2,h3,h4,h5,h6,p,a,span,label,button{
             font-size: 1.6rem;
             @include min(768){font-size: clamp(1.6rem, 2vw, 2rem);}
             &.-s14{@include max(768){font-size: 1.4rem;}}
+            
         }
         &.s-L{
             font-size: 1.6rem;
