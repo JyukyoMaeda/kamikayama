@@ -97,12 +97,13 @@
             img{
                 // filter: drop-shadow(1px 1px 5px rgba(0, 0, 0, 0.459));
                 @include min(768){
-                    width: 85%;
-                    max-width: 750px;
+                    width: 100%;
+                    max-width: 1200px;
                 }
             }
         }
         &-image-wrapper{
+            
             @include max(768){
                 width: 90vw !important;
                 height: 100% !important;

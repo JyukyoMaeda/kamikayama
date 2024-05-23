@@ -350,7 +350,7 @@ h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML,
 }
 @media (width >= 768px) {
   h1.s-ML, h2.s-ML, h3.s-ML, h4.s-ML, h5.s-ML, h6.s-ML, p.s-ML, a.s-ML, span.s-ML, label.s-ML, button.s-ML {
-    font-size: clamp(1.6rem, 2vw, 2rem);
+    font-size: clamp(1.6rem, 2vw, 3rem);
   }
 }
 @media (768px >= width) {
@@ -2693,7 +2693,7 @@ button.swiper-pagination-bullet {
 
 @media (width >= 768px) {
   .w1100 {
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
 }
@@ -2744,6 +2744,16 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .w-logo {
     width: 30%;
+  }
+}
+
+.w-slider {
+  width: 80%;
+}
+@media (width >= 768px) {
+  .w-slider {
+    width: 50%;
+    max-width: 500px;
   }
 }
 
@@ -4293,9 +4303,10 @@ button.swiper-pagination-bullet {
 }
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-house {
-    top: 32%;
-    left: 20%;
+    top: 30%;
+    left: 21%;
     width: 35%;
+    max-width: 570px;
   }
 }
 .c-contents.-imgBg .c-contentsBox.-house-text {
@@ -4306,8 +4317,8 @@ button.swiper-pagination-bullet {
 @media (width >= 768px) {
   .c-contents.-imgBg .c-contentsBox.-house-text {
     top: 45%;
-    left: 50%;
-    transform: translate(-30%, -50%);
+    left: 39%;
+    transform: translate(-10%, -50%);
     width: auto;
   }
 }
@@ -5889,7 +5900,6 @@ a {
 }
 .swiper .swiper-wrapper .swiper-slide {
   text-align: end;
-  opacity: 0.5;
   overflow: hidden;
   transition: 0.5s all;
 }
@@ -6045,11 +6055,6 @@ a {
     background: #3b3b3b;
   }
 }
-.swiper .swiper-button-prev::after,
-.swiper .swiper-button-next::after {
-  color: white !important;
-  filter: drop-shadow(1px 1px 3px black);
-}
 .swiper .swiper-pagination.-type01 .swiper-pagination-bullet {
   box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.692);
   transition: all 1s;
@@ -6058,6 +6063,57 @@ a {
   width: 20px;
   border-radius: 5px;
   background: #5a8190;
+}
+
+.swiper-3d .swiper-slide-shadow {
+  background: none;
+}
+
+.swiper-cards {
+  /* 前への矢印カスタマイズ */
+  /* 次への矢印カスタマイズ */
+}
+.swiper-cards .swiper-button-prev,
+.swiper-cards .swiper-button-next {
+  top: auto;
+  bottom: -25%;
+  height: 50px;
+  width: 50px;
+}
+@media (width >= 768px) {
+  .swiper-cards .swiper-button-prev,
+  .swiper-cards .swiper-button-next {
+    bottom: -20%;
+  }
+}
+.swiper-cards .swiper-button-prev::after,
+.swiper-cards .swiper-button-next::after {
+  background-repeat: no-repeat;
+  background-size: contain;
+  content: "";
+  height: 50px;
+  margin: auto;
+  width: 50px;
+}
+.swiper-cards .swiper-button-prev {
+  left: 25%;
+}
+.swiper-cards .swiper-button-prev::after {
+  background-image: url(../images/SVG/left.svg);
+}
+.swiper-cards .swiper-button-next {
+  right: 25%;
+}
+.swiper-cards .swiper-button-next::after {
+  background-image: url(../images/SVG/right.svg);
+}
+@media (width >= 768px) {
+  .swiper-cards.swiper-content .swiper-button-prev {
+    left: 35%;
+  }
+  .swiper-cards.swiper-content .swiper-button-next {
+    right: 35%;
+  }
 }
 
 #popup,
@@ -6160,8 +6216,8 @@ a {
 }
 @media (width >= 768px) {
   .lum-lightbox-inner img {
-    width: 85%;
-    max-width: 750px;
+    width: 100%;
+    max-width: 1200px;
   }
 }
 @media (768px >= width) {
