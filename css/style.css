@@ -2691,6 +2691,22 @@ button.swiper-pagination-bullet {
   pointer-events: auto !important;
 }
 
+.c-btnArea {
+  width: 45%;
+  margin: auto;
+  filter: drop-shadow(1px 1px 3px #3b3b3b);
+  transition: all 1s;
+}
+@media (width >= 768px) {
+  .c-btnArea {
+    width: 50%;
+    max-width: 300px;
+  }
+}
+.c-btnArea:hover {
+  transform: scale(0.95);
+}
+
 @media (width >= 768px) {
   .w1100 {
     width: 90%;
@@ -2724,6 +2740,11 @@ button.swiper-pagination-bullet {
   margin: auto;
 }
 
+.w50 {
+  width: 50%;
+  margin: auto;
+}
+
 @media (768px >= width) {
   .w95s {
     width: 95% !important;
@@ -2734,6 +2755,13 @@ button.swiper-pagination-bullet {
 @media (768px >= width) {
   .w90s {
     width: 90% !important;
+    margin: auto;
+  }
+}
+
+@media (768px >= width) {
+  .w80s {
+    width: 80% !important;
     margin: auto;
   }
 }
@@ -3626,12 +3654,12 @@ button.swiper-pagination-bullet {
   border-radius: 30px;
 }
 .c-footer__shopArea {
-  width: 60%;
+  width: 80%;
   margin: auto;
 }
 @media (width >= 768px) {
   .c-footer__shopArea {
-    width: 40%;
+    width: 60%;
     max-width: 1000px;
   }
 }
