@@ -234,6 +234,65 @@
 					width: auto;
 				}
 			}
+			// MAPエリア
+			&.-map-sentaku{
+				top: 100%;
+				left: 28%;
+				width: 50%;
+				@include min(768){
+					top: 4%;
+					left: 74%;
+					width: 22%;
+				}
+			}
+				&.-sentakuItem01{
+					top: 16%;
+					left: 5%;
+					width: 10%;
+					height: auto;
+				}
+				&.-sentakuItem02{
+					top: 27%;
+					left: 15%;
+					width: 6%;
+					height: auto;
+				}
+				&.-sentakuItem03{
+					top: 30%;
+					left: 21%;
+					width: 13%;
+					height: auto;
+				}
+				&.-sentakuItem04{
+					top: 35%;
+					left: 40%;
+					width: 5%;
+					height: auto;
+				}
+				&.-sentakuItem05{
+					top: 35%;
+					left: 46%;
+					width: 3%;
+					height: auto;
+				}
+				&.-sentakuItem06{
+					top: 33%;
+					left: 52%;
+					width: 15%;
+					height: auto;
+				}
+				&.-sentakuItem07{
+					top: 22%;
+					left: 68%;
+					width: 20%;
+					height: auto;
+				}
+				&.-sentakuItem08{
+					top: 13%;
+					left: 85%;
+					width: 13%;
+					height: auto;
+				}
 		}
 	}
 }
