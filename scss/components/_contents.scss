@@ -21,6 +21,7 @@
 			// min-height: 480px;
 		}
 	}
+
 	&.-f-slider{// スライダー
 		position: relative;
 		.c-contentsBox{
@@ -137,6 +138,7 @@
 			}
 		}
 	}
+
 	&.-f-view{//ファーストビュー
 		position: relative;
 		overflow: hidden;
@@ -363,4 +365,5 @@
 			}
 		}
 	}
+
 }
